@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Delights</title>
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <link rel="stylesheet" href="My_Assignment.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="Restaurant Logo.png" alt="Restaurant Logo">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#signup">Sign up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-overlay">
+            <img src="banner.png" alt="image">
+        </div>
+    </section>
+
+
+
+
+    <!-- ===== Menu Section ===== -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu-grid">
+            <!-- Noodles & Pasta Category -->
+            <div class="menu-category" onclick="toggleCategory(this)">
+                <div class="category-header">
+                    <i class="fas fa-utensils"></i>
+                    <h3>🍜 Noodles / Pasta</h3>
+                </div>
+                <div class="category-content">
+                    <div class="menu-items-grid">
+                        <div class="menu-item">
+                            <p>Chicken Chowmein</p>
+                            <span>Rs. 450</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Beef Chowmein</p>
+                            <span>Rs. 480</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Spicy Garlic Noodles</p>
+                            <span>Rs. 420</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Chicken Pasta with White Sauce</p>
+                            <span>Rs. 500</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Beef Pasta with Red Sauce</p>
+                            <span>Rs. 520</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Macaroni with Chicken & Vegetables</p>
+                            <span>Rs. 400</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Chicken Lasagna</p>
+                            <span>Rs. 550</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Spicy Pakistani-Style Pasta</p>
+                            <span>Rs. 450</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Biryani & Rice Category -->
+            <div class="menu-category" onclick="toggleCategory(this)">
+                <div class="category-header">
+                    <i class="fas fa-utensils"></i>
+                    <h3>🍛 Biryani & Rice Dishes</h3>
+                </div>
+                <div class="category-content">
+                    <div class="menu-items-grid">
+                        <div class="menu-item">
+                            <p>Chicken Biryani</p>
+                            <span>Rs. 550</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Beef Biryani</p>
+                            <span>Rs. 580</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Sindhi Biryani</p>
+                            <span>Rs. 600</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Bombay Biryani</p>
+                            <span>Rs. 590</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Mutton Biryani</p>
+                            <span>Rs. 650</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Pulao (Chicken/Beef)</p>
+                            <span>Rs. 500</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Tikka Biryani</p>
+                            <span>Rs. 620</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Egg Biryani</p>
+                            <span>Rs. 480</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chicken Dishes Category -->
+            <div class="menu-category" onclick="toggleCategory(this)">
+                <div class="category-header">
+                    <i class="fas fa-utensils"></i>
+                    <h3>🍗 Chicken Dishes</h3>
+                </div>
+                <div class="category-content">
+                    <div class="menu-items-grid">
+                        <div class="menu-item">
+                            <p>Chicken Karahi</p>
+                            <span>Rs. 750</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Chicken Handi</p>
+                            <span>Rs. 780</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Chicken Tikka (BBQ)</p>
+                            <span>Rs. 680</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Chicken Malai Boti</p>
+                            <span>Rs. 720</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Chicken Seekh Kabab</p>
+                            <span>Rs. 650</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Chicken White Karahi</p>
+                            <span>Rs. 780</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Chicken Jalfrezi</p>
+                            <span>Rs. 700</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Chicken Nihari</p>
+                            <span>Rs. 720</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beef Dishes Category -->
+            <div class="menu-category" onclick="toggleCategory(this)">
+                <div class="category-header">
+                    <i class="fas fa-utensils"></i>
+                    <h3>🥩 Beef Dishes</h3>
+                </div>
+                <div class="category-content">
+                    <div class="menu-items-grid">
+                        <div class="menu-item">
+                            <p>Beef Nihari</p>
+                            <span>Rs. 800</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Beef Karahi</p>
+                            <span>Rs. 820</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Beef Korma</p>
+                            <span>Rs. 780</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Beef Seekh Kabab</p>
+                            <span>Rs. 720</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Beef Haleem</p>
+                            <span>Rs. 750</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Beef Qeema (mince)</p>
+                            <span>Rs. 680</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Chapli Kabab (Beef)</p>
+                            <span>Rs. 700</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Hunter Beef</p>
+                            <span>Rs. 750</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Famous Pakistani Dishes Category -->
+            <div class="menu-category" onclick="toggleCategory(this)">
+                <div class="category-header">
+                    <i class="fas fa-utensils"></i>
+                    <h3>🍲 Famous Pakistani Dishes</h3>
+                </div>
+                <div class="category-content">
+                    <div class="menu-items-grid">
+                        <div class="menu-item">
+                            <p>Haleem (mixed meat/lentils)</p>
+                            <span>Rs. 650</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Paye (Beef/Mutton)</p>
+                            <span>Rs. 700</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Nihari (signature dish)</p>
+                            <span>Rs. 750</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Seekh Kabab (Chicken/Beef)</p>
+                            <span>Rs. 680</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Kofta Curry (Meatballs)</p>
+                            <span>Rs. 720</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Karahi Gosht (Mutton/Beef)</p>
+                            <span>Rs. 800</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Chicken 65 (Pakistani spicy style)</p>
+                            <span>Rs. 650</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Katakat (mixed beef organs)</p>
+                            <span>Rs. 750</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rice Category -->
+            <div class="menu-category" onclick="toggleCategory(this)">
+                <div class="category-header">
+                    <i class="fas fa-utensils"></i>
+                    <h3>🍚 Rice</h3>
+                </div>
+                <div class="category-content">
+                    <div class="menu-items-grid">
+                        <div class="menu-item">
+                            <p>Plain Rice</p>
+                            <span>Rs. 200</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Zeera Rice</p>
+                            <span>Rs. 250</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Matar Pulao</p>
+                            <span>Rs. 280</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Yakhni Pulao</p>
+                            <span>Rs. 350</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Fried Rice</p>
+                            <span>Rs. 300</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                        <div class="menu-item">
+                            <p>Vegetable Pulao</p>
+                            <span>Rs. 320</span>
+                            <button class="cart-btn"><i class="fas fa-cart-plus"></i> Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- ===== About Us Section ===== -->
+
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMGludGVyaW9yfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60"
+                        alt="Gourmet Delights Restaurant">
+                </div>
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Welcome to Gourmet Delights, where traditional Pakistani cuisine meets modern culinary
+                        excellence. Founded in 2010 by <span class="owner-name">Usman Iqbal</span>, our restaurant has
+                        been serving authentic flavors that remind our customers of home-cooked meals.</p>
+                    <p>With over 13 years of experience in the culinary industry, Usman Iqbal has curated a menu that
+                        represents the diverse and rich food culture of Pakistan. From the bustling streets of Karachi
+                        to the traditional kitchens of Lahore, our dishes bring you the authentic taste of Pakistan.</p>
+                    <p>At Gourmet Delights, we believe in using only the freshest ingredients and traditional cooking
+                        methods to deliver an unforgettable dining experience. Our chefs are masters of their craft,
+                        ensuring each dish is prepared with precision and love.</p>
+                    <p>Whether you're craving our signature Biryani, sizzling Karahi, or flavorful Seekh Kababs, we
+                        promise to deliver quality, authenticity, and exceptional service with every visit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- ===== Contact Us Section ===== -->
+    <section id="contact"
+        style="background: linear-gradient(135deg, #ff7b00, #ffae42); padding: 60px 20px; color: #fff; font-family: 'Poppins', sans-serif;">
+        <div style="max-width: 1000px; margin: auto;">
+            <h2
+                style="text-align: center; font-size: 36px; margin-bottom: 40px; font-weight: bold; text-transform: uppercase; letter-spacing: 2px;">
+            </h2>
+
+            <!-- ===== Contact Us Section ===== -->
+            <section id="contact">
+                <div class="contact-container">
+                    <h2>Contact Us</h2>
+
+                    <div class="contact-box">
+                        <!-- Contact Form -->
+                        <form class="contact-form">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                            <input type="text" placeholder="Subject" required>
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+
+                        <!-- Contact Info -->
+                        <div class="contact-info">
+                            <div>
+                                <h3>Our Address</h3>
+                                <p>Model Town Lahore, Pakistan</p>
+                            </div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+92 301 2773929</p>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>gourmetdelightsinfo@.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ===== Signup Section ===== -->
+            <section id="signup">
+                <div class="signup-container">
+                    <h2>Create Your Account</h2>
+
+                    <form class="signup-form">
+                        <input type="text" placeholder="Username" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <input type="text" placeholder="CNIC" required>
+                        <input type="tel" placeholder="Phone Number" required>
+
+                        <!-- Gender -->
+                        <div class="gender-box">
+                            <label><input type="radio" name="gender" value="male"> Male</label>
+                            <label><input type="radio" name="gender" value="female"> Female</label>
+                            <label><input type="radio" name="gender" value="other"> Other</label>
+                        </div>
+
+                        <!-- Address -->
+                        <textarea placeholder="Your Address" rows="4" required></textarea>
+
+                        <!-- Image Upload -->
+                        <input type="file" accept="image/*" required>
+
+                        <!-- Signup Button -->
+                        <button type="submit">Signup</button>
+                    </form>
+
+                    <p class="signup-link">
+                        Already have an account? <a href="login.html">Login here</a>
+                    </p>
+                </div>
+            </section>
+
+
+
+            <!-- ===== Footer Section ===== -->
+            <footer id="footer">
+                <div class="footer-container">
+
+                    <!-- Useful Links -->
+                    <div class="footer-box">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Our Menu</a></li>
+                            <li><a href="#">Bank Discounts</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Opening Hours -->
+                    <div class="footer-box">
+                        <h3>Opening Hours</h3>
+                        <ul class="hours">
+                            <li>Monday: 12:00pm - 12:00am</li>
+                            <li>Tuesday: 12:00pm - 12:00am</li>
+                            <li>Wednesday: 12:00pm - 12:00am</li>
+                            <li>Thursday: 12:00pm - 12:00am</li>
+                            <li>Friday: 12:00pm - 12:00am</li>
+                            <li>Saturday: 12:00pm - 12:00am</li>
+                            <li>Sunday: 12:00pm - 12:00am</li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="footer-box">
+                        <h3>Contact Info</h3>
+                        <p>Model Town Lahore, Pakistan</p>
+                        <p>Phone: +92 301 2773929</p>
+                        <p>Email: gourmetdelightsinfo@.com</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <p>© 2025 Gourmet delights | Powered by USMAN_IQBAL</p>
+                </div>
+            </footer>
+
+
+            <script>
+                // Toggle menu categories
+                function toggleCategory(element) {
+                    // Close all other open categories
+                    const allCategories = document.querySelectorAll('.menu-category');
+                    allCategories.forEach(category => {
+                        if (category !== element && category.classList.contains('active')) {
+                            category.classList.remove('active');
+                        }
+                    });
+
+                    // Toggle the clicked category
+                    element.classList.toggle('active');
+                }
+
+                // Close categories when clicking outside
+                document.addEventListener('click', function (event) {
+                    const menuCategories = document.querySelectorAll('.menu-category');
+                    let isClickInside = false;
+
+                    menuCategories.forEach(category => {
+                        if (category.contains(event.target)) {
+                            isClickInside = true;
+                        }
+                    });
+
+                    if (!isClickInside) {
+                        menuCategories.forEach(category => {
+                            category.classList.remove('active');
+                        });
+                    }
+                });
+            </script>
+
+
+
+
+</body>
+
+</html>
